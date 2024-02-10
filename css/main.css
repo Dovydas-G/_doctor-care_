@@ -31,9 +31,15 @@ body {
 
 .container {
     width: 100%;
-    padding: 4rem 0;
+   
     background-color: var(--color-green-light);
 }
+
+.container-size {
+    width: 110rem;
+    margin: 0 calc(50% - 55rem);
+}
+
 
 /* Header section */
 
@@ -44,9 +50,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 4rem 0;
-    width: 130rem;
     height: 7.2rem;
-    margin: 0 calc(50% - 65rem);
+    
 }
 
 .header-menu > nav {
@@ -98,8 +103,6 @@ body {
 .hero-section >.hero {
     display: flex;
     flex-direction: row;
-    width: 130rem;
-    margin: 0 calc(50% - 65rem);
     background-color: var(--color-green-light);
 }
 
@@ -116,13 +119,13 @@ body {
     
 }
 
-.left-column > .head-text {
+.head-text {
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--color-green);
 }
 
-.left-column > .title {
+.title {
     font-size: 5.2rem;
     font-weight: 700;
     color: var(--color-gray-headline);
@@ -161,4 +164,154 @@ body {
     align-content: end;
 }
 
+/* Service section */
 
+.service-section > .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.service-section,
+.service {
+    background-color: var(--color-green-light-02);
+}
+
+
+.service {
+    height: 100vh;
+}
+
+.service > .cards-services {
+    display: grid;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(2, 21rem);
+    grid-template-columns: repeat(3, 34rem);
+    margin-top: 50px;
+    gap: 4rem;
+}
+
+
+
+.cards-services > .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5rem 0;
+    padding:0 1.5rem;
+    width: 33rem;
+    height: 20rem;
+    background-color: var(--color-white);
+}
+
+.card > .fa-check {
+    padding: 1rem;
+    color: var(--color-green);
+    background-color: var(--color-green-light);
+    border-radius: 15px;
+}
+
+.card > .card-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-gray-headline);
+}
+
+.card > .card-text {
+    font-size: 1.6rem;
+    color: var(--color-gray-paragraph);
+}
+
+/* About section */
+
+.about-section,
+.about {
+    background-color: var(--color-beige);
+}
+
+.about-section > .about {
+    display: flex;
+    height: 100vh; 
+    flex-direction: row;
+    align-items: center;
+    gap: 0 4rem;
+}
+
+
+.about-right-column > .title {
+    font-size: 4rem;
+    color: var(--color-gray-headline);
+    margin: 2rem 0;
+}
+
+.about-right-column > .about-text {
+    font-size: 1.6rem;
+    color: var(--color-gray-paragraph);
+}
+
+/* Contacts section */
+
+.contacts-section > .contacts {
+    display: flex;
+    height: 100vh; 
+    flex-direction: row;
+    align-items: center;
+    gap: 0 4rem;
+}
+
+.contacts-left-column > .title {
+    width: 14ch;
+    font-size: 4rem;
+    color: var(--color-gray-headline);
+}
+
+
+.contacts-left-column > .contacts-text {
+    font-size: 1.6rem;
+    color: var(--color-gray-paragraph);
+    margin: 2rem 0;
+}
+
+
+.footer-section,
+.footer {
+    background-color: var(--color-green);
+}
+
+.footer-section > .footer {
+    display: flex;
+    height: 30vh; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer-left-column > .footer-logo {
+    margin-bottom: 2rem;
+}
+
+.footer-left-column > .footer-text {
+    font-size: 1.6rem;
+    color: var(--color-white);
+    margin: 2rem 0;
+}
+
+
+.footer-right-column > .footer-icon {
+    font-size: 2.4rem;
+    color: var(--color-white);
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.footer-icon:hover {
+    color: var(--color-green-hover);
+}
