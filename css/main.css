@@ -95,15 +95,18 @@ body {
 
 /* Hero section */
 
-.hero-section {
+
+.hero-section,
+.hero {
     background-color: var(--color-green-light);
 }
 
 
 .hero-section >.hero {
     display: flex;
+    height: 70vh;
     flex-direction: row;
-    background-color: var(--color-green-light);
+    
 }
 
 .left-column {
@@ -164,6 +167,50 @@ body {
     align-content: end;
 }
 
+.hero-section {
+    position: relative;
+}
+
+.statistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 110rem;
+    height: 21rem;
+    background-color: var(--color-beige);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.statistics > .statistics-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 37rem;
+    height: 8rem;
+}
+
+.statistics-box > .statistics-title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--color-gray-headline);
+}
+
+.statistics-box > .statistics-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-green);
+}
+
+.middle-statistics-box {
+    border-left: 1px solid var(--color-green);
+    border-right: 1px solid var(--color-green);
+}
+
+
 /* Service section */
 
 .service-section > .service {
@@ -174,14 +221,22 @@ body {
     
 }
 
+.service {
+    height: 108rem;
+}
+
+
 .service-section,
 .service {
     background-color: var(--color-green-light-02);
 }
 
-
-.service {
-    height: 100vh;
+.service-title {
+    width: 17ch;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-gray-headline);
 }
 
 .service > .cards-services {
