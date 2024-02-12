@@ -102,7 +102,7 @@ body {
 }
 
 
-.menu-btn {
+.nav-toggle-label  {
     position: absolute;
     right: 14%;
     color: var(--color-white);
@@ -376,14 +376,99 @@ body {
     color: var(--color-green-hover);
 }
 
-#click {
+/* Mobile section */
+
+.go-to-mobile {
     display: none;
 }
+
+
+.mobile-section,
+.mobile-section > .mobile-header, 
+.mobile-section > .mobile-main,
+.mobile-section > .mobile-footer{
+    background-color: var(--color-green);
+}
+
+.header-logo {
+    width: 13.3rem;
+    height: 1.7rem;
+}
+
+.back-to-home {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+.mobile-section > .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 4rem 0;
+    height: 15rem;
+}
+
+.mobile-main > .mobile-navbar {
+    display: flex;
+    height: 60rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem 0;
+
+}
+
+.mobile-navbar > .nav-list {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: var(--color-white);
+
+}
+
+.mobile-footer {
+    display: flex;
+    justify-content: center;
+    gap: 0 5rem;
+    height: 20rem;
+}
+
+.mobile-footer .mobile-footer-icon {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.mobile-navbar > .nav-active {
+    padding: 2rem 4rem;
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: var(--color-green);
+    border-radius: 4rem;
+    background-color: var(--color-white);
+    font-weight: 700;
+
+}
+
+.mobile-navbar > .nav-active:hover {
+    background-color: var(--color-green-hover);
+    color: var(--color-white);
+}
+
+.mobile-navbar > .nav-list:hover,
+.mobile-footer .mobile-footer-icon:hover {
+    color: var(--color-green-hover);
+}
+
+
+
 
 @media (max-width: 110rem) {
     .container-size {
         width: 80rem;
         margin: 0 calc(50% - 40rem);
+        
     }
 
 
@@ -440,24 +525,22 @@ body {
 }
 
 @media (max-width: 65rem) {
+
     .container-size {
         width: 60rem;
         margin: 0 calc(50% - 30rem);
     }
     
+    .go-to-mobile {
+        display: flex;
+    }
+
     .header-menu > .header-btn,
     .header-menu > .navbar {
         display: none;
     }
 
-    .header-menu > .menu-btn {
-        display: block;
-    }
 
-
-    #click:checked ~ nav {
-        left: 0;
-    }
     
     .hero-section > .hero {
         height: 108rem;
@@ -531,7 +614,7 @@ body {
 
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     .container > .row,
     .container > .row-short {
         width: 400px;
@@ -549,4 +632,4 @@ body {
         width: 100%;
         margin: 0;
     }
-}
+} */
