@@ -643,7 +643,7 @@ body {
 @media (max-width: 40rem) {
     .container-size {
         width: 32rem;
-        margin: 0 calc(50% - 14rem);
+        margin: 0 calc(50% - 16rem);
     }
     
     .right-column > .hero-image {
