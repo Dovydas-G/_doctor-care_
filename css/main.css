@@ -354,7 +354,7 @@ body {
 
 .footer-section > .footer {
     display: flex;
-    height: 30vh; 
+    height: 30rem; 
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -369,8 +369,6 @@ body {
     color: var(--color-white);
     margin: 2rem 0;
 }
-
-
 
 .footer-right-column > .footer-icon {
     font-size: 2.4rem;
