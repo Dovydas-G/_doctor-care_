@@ -97,8 +97,9 @@ body {
 
 .header-btn:hover {
     color: var(--color-white);
-    background-color: var(--color-green-hover);
+    background-color:  var(--color-green-hover);
     border: 2px solid transparent;
+    
 }
 
 
@@ -421,7 +422,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem 0;
+    gap: 6rem 0;
 
 }
 
